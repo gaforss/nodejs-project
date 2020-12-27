@@ -1,0 +1,30 @@
+{
+  "name": "auth0-express-webapp-sample",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.1.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaforss/alamedatek.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/gaforss/alamedatek/issues"
+  },
+  "homepage": "https://github.com/gaforss/alamedatek#readme"
+}

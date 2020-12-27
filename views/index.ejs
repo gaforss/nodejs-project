@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Web App - Landing Page</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    
+    <link href="icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="icons/font-awesome/css/all.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body id="page-top" class="landing-page no-skin-config">
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="/">Web App</a>
+                <div class="navbar-header page-scroll">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="nav-link page-scroll" href="#page-top">Home</a></li>
+                        <li><a class="nav-link page-scroll" href="#features">Features</a></li>
+                        <li><a class="nav-link page-scroll" href="#testimonials">Testimonials</a></li>
+                        <li><a class="nav-link page-scroll" href="#pricing">Pricing</a></li>
+                        <li><a class="nav-link page-scroll" href="#contact">Contact</a></li>
+                        <li>
+                            <% if (locals.user) { %>
+                                <li><a href="/dashboard">Dashboard</a></li>
+                            <% } else { %>
+                                <a href="/login" class="btn"><i class="fa fa-users"></i> Login</a>
+                            <% } %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+<div id="inSlider" class="carousel slide" data-ride="carousel" >
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Close Deals Faster.</h1>
+                    <p>Your sales reps will reach the right prospects </br> 
+                    faster with us.</p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="/login" role="button">Get Started Today</a>
+                    </p>
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <img src="img/landing/laptop.png" alt="laptop"/>
+                </div>
+            </div>
+            <div class="header-back one"></div>
+        </div>
+    </div>
+</div>
+
+<!--
+<section id="features" class="container services">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Improve Sales Velocity</h2>
+            <p>Prospect while you browse LinkedIn or any other site. When you've found your desired lead, one button sends their contact info to all of your favorite sales tools. We integrate with many existing CRM's.</p>
+            <p><a class="navy-link" href="/login" role="button">Details &raquo;</a></p>
+        </div>
+        <div class="col-sm-4">
+            <h2>Transparency For Management</h2>
+            <p>Our dashboard allows managers a bird's eye view of their team's prospecting. Review performance by quantity or location. Connect the dots between prospecting and closed deals.</p>
+            <p><a class="navy-link" href="/login" role="button">Details &raquo;</a></p>
+        </div>
+        <div class="col-sm-4">
+            <h2>Take Back Control</h2>
+            <p>No matter what sales software you use, we believe your leads should get there in one click. That's why we're constantly working to integrate into new CRM's. You should never have to copy/paste ever again.</p>
+            <p><a class="navy-link" href="/login" role="button">Details &raquo;</a></p>
+        </div>
+    </div>
+</section>
+-->
+
+<section  class="container features">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Your Leads.<br/> <span class="navy"> Everywhere You Want Them.</span> </br> With One Click. </h1>
+            <p>There are many great features that that will make your prospecting efforts much better.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-center wow fadeInLeft">
+            <div>
+                <i class="fab fa-salesforce features-icon"></i>
+                <h2>Salesforce</h2>
+                <p>Integrate directly into Salesforce to scrape user information off the profiles that you visit and choose.</p>
+            </div>
+            <div class="m-t-lg">
+                <i class="fab fa-google features-icon"></i>
+                <h2>G-Mail</h2>
+                <p>Email your leads directly through our CRM based on the list of emails that you gather from the sites you visit.</p>
+            </div>
+        </div>
+        <div class="col-md-6 text-center  wow zoomIn">
+            <img src="img/landing/perspective.png" alt="dashboard" class="img-fluid">
+        </div>
+        <div class="col-md-3 text-center wow fadeInRight">
+            <div>
+                <i class="fab fa-hubspot features-icon"></i>
+                <h2>Hubspot</h2>
+                <p>Gather insights and measure the performance of all your prospecting efforts, including which sites are most effective.</p>
+            </div>
+            <div class="m-t-lg">
+                <i class="fab fa-linkedin features-icon"></i>
+                <h2>Linkedin</h2>
+                <p>Integrate directly into Linkedin to scrape user information off the profiles that you visit and choose.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="navy-section testimonials" style="margin-top: 0">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center wow zoomIn">
+                <i class="fa fa-comment big-icon"></i>
+                <h1>
+                    What our users say
+                </h1>
+                <div class="testimonials-text">
+                    <i>"Our tool is one of the best tools in the market and you can start your day for cold calling in a few minutes, the way it unlocks mobile and switchboard numbers is unparalleled compared to the tools available in the market."</i>
+                </div>
+                <small>
+                    <strong>12.02.2020 - Andy Smith</strong>
+                </small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="pricing">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Pricing</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 wow zoomIn">
+                <ul class="pricing-plan list-unstyled">
+                    <li class="pricing-title">
+                        Starter
+                    </li>
+                    <li class="pricing-desc">
+                        For small sales teams just starting out, looking to find contact data on their prospects.
+                    </li>
+                    <li class="pricing-price">
+                        <span>$25</span> per User/Month
+                    </li>
+                    <li>
+                        Every User Gets 250 Verified Emails
+                    </li>
+                    <li>
+                        25 Mobile Phone Numbers
+                    </li>
+                    <li>
+                        Save Prospects into Google Sheets
+                    </li>
+                    <li>
+                        Capture Contacts into Hubspot CRM
+                    </li>
+                    <li>
+                        <a class="btn btn-primary btn-xs" href="#">Signup</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 wow zoomIn">
+                <ul class="pricing-plan list-unstyled selected">
+                    <li class="pricing-title">
+                        Pro
+                    </li>
+                    <li class="pricing-desc">
+                        For growing sales teams focused on building pipeline with a smooth outbound prospecting process.
+                    </li>
+                    <li class="pricing-price">
+                        Starts at <span>$5,000</span> / year
+                    </li>
+                    <li>
+                        Same As Starter Package
+                    </li>
+                    <li>
+                        500 Verified Work Emails
+                    </li>
+                    <li>
+                        50 Mobile Phone Numbers
+                    </li>
+                    <li>
+                        Salesforce Sync with Custom Field Mapping
+                    </li>
+                    <li class="plan-action">
+                        <a class="btn btn-primary btn-xs" href="#">Signup</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 wow zoomIn">
+                <ul class="pricing-plan list-unstyled">
+                    <li class="pricing-title">
+                        Enterprise
+                    </li>
+                    <li class="pricing-desc">
+                        For established sales teams looking to increase outbound activities and response rates without sacrificing data hygiene.
+                    </li>
+                    <li class="pricing-price">
+                        <span>Let's Chat!</span>
+                    </li>
+                    <li>
+                        Same As Pro
+                    </li>
+                    <li>
+                        Unlimited Email Addresses & Phone Numbers
+                    </li>
+                    <li>
+                        <a class="btn btn-primary btn-xs" href="#">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row m-t-lg">
+            <div class="col-lg-12 text-center m-t-lg">
+                <p>Interested in seeing a <a href="mailto:alex@insta.ci">demo</a> today? Feel free to reach out and we would be happy to schedule some time to share more about how our pltatform can benefit your organization. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="gray-section contact">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Contact Us</h1>
+                <p>Don't hesitate to reach out with any questions. We are very fast to respond!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="mailto:alex@insta.ci" class="btn btn-primary">Send Us An Email</a>
+                <p class="m-t-sm">
+                    Or follow us on social platform
+                </p>
+                <ul class="list-inline social-icon">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center m-t-lg m-b-lg">
+                <p><strong>&copy; 2021 Alex's Web App</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.metisMenu.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/main.js"></script>
+<script src="js/pace.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('body').scrollspy({
+            target: '#navbar',
+            offset: 80
+        });
+        $('a.page-scroll').bind('click', function(event) {
+            var link = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(link.attr('href')).offset().top - 50
+            }, 500);
+            event.preventDefault();
+            $("#navbar").collapse('hide');
+        });
+    });
+    var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.navbar-default' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('navbar-scroll')
+            }
+            else {
+                $(header).removeClass('navbar-scroll')
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+    })();
+    new WOW().init();
+</script>
+
+</body>
+</html>
