@@ -6,8 +6,6 @@ const path = require('path');
 const router = require('./routes/index');
 const { auth } = require('express-openid-connect');
 
-// Test Code
-
 dotenv.load();
 
 const app = express();
