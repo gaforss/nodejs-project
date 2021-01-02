@@ -11,7 +11,8 @@
     "express-openid-connect": "^2.1.0",
     "http": "^0.0.1-security",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "path": "^0.12.7"
   },
   "description": "",
   "version": "1.0.0",
