@@ -1,5 +1,5 @@
 {
-  "name": "auth0-express-webapp-sample",
+  "name": "alex-web-app",
   "scripts": {
     "start": "node server.js"
   },
