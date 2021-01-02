@@ -20,11 +20,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gaforss/alamedatek.git"
+    "url": "git+https://github.com/gaforss/nodejs-project.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/gaforss/alamedatek/issues"
+    "url": "https://github.com/gaforss/nodejs-project/issues"
   },
-  "homepage": "https://github.com/gaforss/alamedatek#readme"
+  "homepage": "https://github.com/gaforss/nodejs-project#readme"
 }
